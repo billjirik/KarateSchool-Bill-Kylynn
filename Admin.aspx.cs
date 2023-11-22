@@ -132,7 +132,7 @@ namespace KarateSchool
             GridView1.EditIndex = -1;
             conn.Open();
             //SqlCommand cmd = new SqlCommand("SELECT * FROM detail", conn);  
-            SqlCommand cmd = new SqlCommand("update detail set name='" + textName.Text + "',address='" + textadd.Text + "',country='" + textc.Text + "'where id='" + userid + "'", conn);
+            SqlCommand cmd = new SqlCommand("First Name='" + textName.Text + "',Last name='" + textadd.Text + "',='" + textc.Text + "'='" + userid + "'", conn);
             cmd.ExecuteNonQuery();
             conn.Close();
             gvbind();
@@ -207,7 +207,7 @@ namespace KarateSchool
             GridView2.EditIndex = -1;
             conn.Open();
             //SqlCommand cmd = new SqlCommand("SELECT * FROM detail", conn);  
-            SqlCommand cmd = new SqlCommand("update detail set name='" + textName.Text + "',address='" + textadd.Text + "',country='" + textc.Text + "'where id='" + userid + "'", conn);
+            SqlCommand cmd = new SqlCommand("First Name='" + textName.Text + "',Last name='" + textadd.Text + "',='" + textc.Text + "'='" + userid + "'", conn);
             cmd.ExecuteNonQuery();
             conn.Close();
             gvbind2();
